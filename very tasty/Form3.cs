@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Data.OleDb;
 using System.Threading.Tasks;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace very_tasty
