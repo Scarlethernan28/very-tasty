@@ -143,6 +143,7 @@
     <Content Include="login.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\descarga.jpg" />
     <None Include="Resources\WhatsApp Image 2021-09-28 at 11.18.24 AM.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
