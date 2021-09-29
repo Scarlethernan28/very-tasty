@@ -145,9 +145,9 @@ namespace very_tasty
             this.label4.Location = new System.Drawing.Point(511, 326);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(422, 22);
+            this.label4.Size = new System.Drawing.Size(435, 22);
             this.label4.TabIndex = 9;
-            this.label4.Text = "POSTRE DE TRES LECHES CO CHOCOLATE";
+            this.label4.Text = "POSTRE DE TRES LECHES CON CHOCOLATE";
             // 
             // Form6
             // 
