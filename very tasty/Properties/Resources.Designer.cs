@@ -93,6 +93,26 @@ namespace very_tasty.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap postre_2 {
+            get {
+                object obj = ResourceManager.GetObject("postre 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap postres {
+            get {
+                object obj = ResourceManager.GetObject("postres", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2021_09_28_at_11_18_24_AM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2021-09-28 at 11.18.24 AM", resourceCulture);
