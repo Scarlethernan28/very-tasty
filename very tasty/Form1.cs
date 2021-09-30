@@ -8,7 +8,6 @@ using System.Text;
 using System.Data.OleDb;
 using System.IO;
 using System.Threading.Tasks;
-
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -26,7 +25,7 @@ namespace very_tasty
             InitializeComponent();
         }
         SqlConnection conex = new SqlConnection("server = LAPTOP-SCCOV70O; database = codigos+ ; integrated security=true");
-
+       
         private void Form1_Load(object sender, EventArgs e)
         {
             try
