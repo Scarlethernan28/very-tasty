@@ -58,7 +58,7 @@ namespace very_tasty
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(515, 233);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(152, 47);
             this.button1.TabIndex = 2;
@@ -68,7 +68,7 @@ namespace very_tasty
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(752, 234);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(141, 47);
             this.button2.TabIndex = 3;
@@ -79,20 +79,20 @@ namespace very_tasty
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(511, 140);
+            this.label2.Location = new System.Drawing.Point(883, 147);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 24);
+            this.label2.Size = new System.Drawing.Size(70, 24);
             this.label2.TabIndex = 4;
-            this.label2.Text = "1.50";
+            this.label2.Text = "$ 1.50";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::very_tasty.Properties.Resources.postre_2;
             this.pictureBox2.Location = new System.Drawing.Point(80, 326);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(390, 210);
+            this.pictureBox2.Size = new System.Drawing.Size(318, 210);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -103,7 +103,7 @@ namespace very_tasty
             this.pictureBox1.Location = new System.Drawing.Point(80, 59);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(390, 221);
+            this.pictureBox1.Size = new System.Drawing.Size(318, 221);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -111,7 +111,7 @@ namespace very_tasty
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(515, 468);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(143, 38);
             this.button3.TabIndex = 6;
@@ -121,7 +121,7 @@ namespace very_tasty
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(742, 468);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(131, 38);
             this.button4.TabIndex = 7;
@@ -132,17 +132,17 @@ namespace very_tasty
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(511, 380);
+            this.label3.Location = new System.Drawing.Point(883, 371);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 24);
+            this.label3.Size = new System.Drawing.Size(70, 24);
             this.label3.TabIndex = 8;
-            this.label3.Text = "7.50";
+            this.label3.Text = "$ 7.50";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(511, 326);
+            this.label4.Location = new System.Drawing.Point(438, 326);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(435, 22);

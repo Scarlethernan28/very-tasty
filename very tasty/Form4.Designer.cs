@@ -146,8 +146,8 @@ namespace very_tasty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1102, 623);
+            this.BackColor = System.Drawing.Color.OrangeRed;
+            this.ClientSize = new System.Drawing.Size(966, 623);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
