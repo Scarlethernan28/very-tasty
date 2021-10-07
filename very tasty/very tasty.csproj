@@ -85,18 +85,13 @@
     <Compile Include="Form6.Designer.cs">
       <DependentUpon>Form6.cs</DependentUpon>
     </Compile>
-    <Compile Include="loginDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>loginDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="loginDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>loginDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sistemaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,28 +120,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="loginDataSet.xsc">
-      <DependentUpon>loginDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="loginDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>loginDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="loginDataSet.xss">
-      <DependentUpon>loginDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="loginDataSet1.xsc">
-      <DependentUpon>loginDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="loginDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>loginDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="loginDataSet1.xss">
-      <DependentUpon>loginDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -156,20 +129,33 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="sistemaDataSet.xsc">
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sistemaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemaDataSet.xss">
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="login.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\postre 2.jpg" />
     <None Include="Resources\postres.jpg" />
     <None Include="Resources\ENSALADA.jpg" />
     <None Include="Resources\descarga1.jpg" />
     <None Include="Resources\descarga.jpg" />
     <None Include="Resources\WhatsApp Image 2021-09-28 at 11.18.24 AM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sistema.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

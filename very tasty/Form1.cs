@@ -16,10 +16,9 @@ namespace very_tasty
     public partial class Form1 : Form
     {
 
-        OleDbConnection conexion = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|login.accdb");
 
-        
-        
+       
+       
         public Form1()
         {
             InitializeComponent();
@@ -30,7 +29,7 @@ namespace very_tasty
         {
             try
             {
-                conexion.Open();
+                conex.Open();
                 MessageBox.Show("conectado");
 
             }
@@ -44,27 +43,40 @@ namespace very_tasty
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string consulta = "select password,usuario from login where password = '" + textBox2.Text + "' and usuario = '" + textBox1.Text + "';";
-            OleDbCommand comando = new OleDbCommand(consulta,conexion);
-            OleDbDataReader leedb;
-            leedb = comando.ExecuteReader();
-            Boolean existereg = leedb.HasRows;
-            if (existereg)
+            try
+
             {
-                MessageBox.Show("bienvenido al sistema" + textBox1.Text);
-                Form2 f2 = new Form2();
-                f2.Show();
-                this.Hide();
+                OleDbConnection conexion_access = new OleDbConnection();
+                conexion_access.ConnectionString = "Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\\SISTEMA\\sistema.accdb ";
+                conexion_access.Open();
+                OleDbDataAdapter consulta = new OleDbDataAdapter("SELECT * FROM usuario", conexion_access);
+                DataSet resultado = new DataSet(); consulta.Fill(resultado);
+                foreach (DataRow registro in resultado.Tables[0].Rows)
+                {
+                    if ((textBox1.Text == registro["nombre"].ToString()) && (textBox2.Text == registro["clave"].ToString()))
+                    {
+
+                        Form3 f3 = new Form3();
+                        f3.Show();
+                        this.Hide();
+                    }
+                    conexion_access.Close();
+                }
 
             }
-            else
+
+            catch (Exception err)
             {
-                MessageBox.Show("usuario o contraseña incorrecto trate de nuevo");
-                return;
+
+                MessageBox.Show(err.Message); MessageBox.Show("Error de usuario o clave de acceso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox1.Focus();
+                
             }
-            conexion.Close();
+           
+
+
         }
-
+       
         private void button2_Click(object sender, EventArgs e)
         {
             conex.Open();

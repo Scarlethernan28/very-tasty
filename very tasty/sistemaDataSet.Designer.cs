@@ -20,17 +20,17 @@ namespace very_tasty {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("loginDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("sistemaDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class loginDataSet1 : global::System.Data.DataSet {
+    public partial class sistemaDataSet : global::System.Data.DataSet {
         
-        private loginDataTable tablelogin;
+        private usuarioDataTable tableusuario;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public loginDataSet1() {
+        public sistemaDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace very_tasty {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected loginDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected sistemaDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace very_tasty {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["login"] != null)) {
-                    base.Tables.Add(new loginDataTable(ds.Tables["login"]));
+                if ((ds.Tables["usuario"] != null)) {
+                    base.Tables.Add(new usuarioDataTable(ds.Tables["usuario"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace very_tasty {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public loginDataTable login {
+        public usuarioDataTable usuario {
             get {
-                return this.tablelogin;
+                return this.tableusuario;
             }
         }
         
@@ -127,7 +127,7 @@ namespace very_tasty {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            loginDataSet1 cln = ((loginDataSet1)(base.Clone()));
+            sistemaDataSet cln = ((sistemaDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace very_tasty {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["login"] != null)) {
-                    base.Tables.Add(new loginDataTable(ds.Tables["login"]));
+                if ((ds.Tables["usuario"] != null)) {
+                    base.Tables.Add(new usuarioDataTable(ds.Tables["usuario"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace very_tasty {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablelogin = ((loginDataTable)(base.Tables["login"]));
+            this.tableusuario = ((usuarioDataTable)(base.Tables["usuario"]));
             if ((initTable == true)) {
-                if ((this.tablelogin != null)) {
-                    this.tablelogin.InitVars();
+                if ((this.tableusuario != null)) {
+                    this.tableusuario.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace very_tasty {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "loginDataSet1";
+            this.DataSetName = "sistemaDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/loginDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/sistemaDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablelogin = new loginDataTable();
-            base.Tables.Add(this.tablelogin);
+            this.tableusuario = new usuarioDataTable();
+            base.Tables.Add(this.tableusuario);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializelogin() {
+        private bool ShouldSerializeusuario() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace very_tasty {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            loginDataSet1 ds = new loginDataSet1();
+            sistemaDataSet ds = new sistemaDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,25 +270,27 @@ namespace very_tasty {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void loginRowChangeEventHandler(object sender, loginRowChangeEvent e);
+        public delegate void usuarioRowChangeEventHandler(object sender, usuarioRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class loginDataTable : global::System.Data.TypedTableBase<loginRow> {
+        public partial class usuarioDataTable : global::System.Data.TypedTableBase<usuarioRow> {
             
             private global::System.Data.DataColumn columnId;
             
-            private global::System.Data.DataColumn columnusuario;
+            private global::System.Data.DataColumn columnnombre;
             
-            private global::System.Data.DataColumn columnpassword;
+            private global::System.Data.DataColumn columnclave;
+            
+            private global::System.Data.DataColumn columnnivel;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public loginDataTable() {
-                this.TableName = "login";
+            public usuarioDataTable() {
+                this.TableName = "usuario";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -296,7 +298,7 @@ namespace very_tasty {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal loginDataTable(global::System.Data.DataTable table) {
+            internal usuarioDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -313,7 +315,7 @@ namespace very_tasty {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected loginDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected usuarioDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -328,17 +330,25 @@ namespace very_tasty {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn usuarioColumn {
+            public global::System.Data.DataColumn nombreColumn {
                 get {
-                    return this.columnusuario;
+                    return this.columnnombre;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn passwordColumn {
+            public global::System.Data.DataColumn claveColumn {
                 get {
-                    return this.columnpassword;
+                    return this.columnclave;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn nivelColumn {
+                get {
+                    return this.columnnivel;
                 }
             }
             
@@ -353,54 +363,55 @@ namespace very_tasty {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public loginRow this[int index] {
+            public usuarioRow this[int index] {
                 get {
-                    return ((loginRow)(this.Rows[index]));
+                    return ((usuarioRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event loginRowChangeEventHandler loginRowChanging;
+            public event usuarioRowChangeEventHandler usuarioRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event loginRowChangeEventHandler loginRowChanged;
+            public event usuarioRowChangeEventHandler usuarioRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event loginRowChangeEventHandler loginRowDeleting;
+            public event usuarioRowChangeEventHandler usuarioRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event loginRowChangeEventHandler loginRowDeleted;
+            public event usuarioRowChangeEventHandler usuarioRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddloginRow(loginRow row) {
+            public void AddusuarioRow(usuarioRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public loginRow AddloginRow(string usuario, string password) {
-                loginRow rowloginRow = ((loginRow)(this.NewRow()));
+            public usuarioRow AddusuarioRow(string nombre, string clave, int nivel) {
+                usuarioRow rowusuarioRow = ((usuarioRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        usuario,
-                        password};
-                rowloginRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowloginRow);
-                return rowloginRow;
+                        nombre,
+                        clave,
+                        nivel};
+                rowusuarioRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowusuarioRow);
+                return rowusuarioRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public loginRow FindById(int Id) {
-                return ((loginRow)(this.Rows.Find(new object[] {
+            public usuarioRow FindById(int Id) {
+                return ((usuarioRow)(this.Rows.Find(new object[] {
                             Id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                loginDataTable cln = ((loginDataTable)(base.Clone()));
+                usuarioDataTable cln = ((usuarioDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -408,15 +419,16 @@ namespace very_tasty {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new loginDataTable();
+                return new usuarioDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
                 this.columnId = base.Columns["Id"];
-                this.columnusuario = base.Columns["usuario"];
-                this.columnpassword = base.Columns["password"];
+                this.columnnombre = base.Columns["nombre"];
+                this.columnclave = base.Columns["clave"];
+                this.columnnivel = base.Columns["nivel"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -424,10 +436,12 @@ namespace very_tasty {
             private void InitClass() {
                 this.columnId = new global::System.Data.DataColumn("Id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnId);
-                this.columnusuario = new global::System.Data.DataColumn("usuario", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnusuario);
-                this.columnpassword = new global::System.Data.DataColumn("password", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnpassword);
+                this.columnnombre = new global::System.Data.DataColumn("nombre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnombre);
+                this.columnclave = new global::System.Data.DataColumn("clave", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnclave);
+                this.columnnivel = new global::System.Data.DataColumn("nivel", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnivel);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AutoIncrement = true;
@@ -435,34 +449,34 @@ namespace very_tasty {
                 this.columnId.AutoIncrementStep = -1;
                 this.columnId.AllowDBNull = false;
                 this.columnId.Unique = true;
-                this.columnusuario.MaxLength = 255;
-                this.columnpassword.MaxLength = 255;
+                this.columnnombre.MaxLength = 255;
+                this.columnclave.MaxLength = 255;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public loginRow NewloginRow() {
-                return ((loginRow)(this.NewRow()));
+            public usuarioRow NewusuarioRow() {
+                return ((usuarioRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new loginRow(builder);
+                return new usuarioRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(loginRow);
+                return typeof(usuarioRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.loginRowChanged != null)) {
-                    this.loginRowChanged(this, new loginRowChangeEvent(((loginRow)(e.Row)), e.Action));
+                if ((this.usuarioRowChanged != null)) {
+                    this.usuarioRowChanged(this, new usuarioRowChangeEvent(((usuarioRow)(e.Row)), e.Action));
                 }
             }
             
@@ -470,8 +484,8 @@ namespace very_tasty {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.loginRowChanging != null)) {
-                    this.loginRowChanging(this, new loginRowChangeEvent(((loginRow)(e.Row)), e.Action));
+                if ((this.usuarioRowChanging != null)) {
+                    this.usuarioRowChanging(this, new usuarioRowChangeEvent(((usuarioRow)(e.Row)), e.Action));
                 }
             }
             
@@ -479,8 +493,8 @@ namespace very_tasty {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.loginRowDeleted != null)) {
-                    this.loginRowDeleted(this, new loginRowChangeEvent(((loginRow)(e.Row)), e.Action));
+                if ((this.usuarioRowDeleted != null)) {
+                    this.usuarioRowDeleted(this, new usuarioRowChangeEvent(((usuarioRow)(e.Row)), e.Action));
                 }
             }
             
@@ -488,14 +502,14 @@ namespace very_tasty {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.loginRowDeleting != null)) {
-                    this.loginRowDeleting(this, new loginRowChangeEvent(((loginRow)(e.Row)), e.Action));
+                if ((this.usuarioRowDeleting != null)) {
+                    this.usuarioRowDeleting(this, new usuarioRowChangeEvent(((usuarioRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveloginRow(loginRow row) {
+            public void RemoveusuarioRow(usuarioRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -504,7 +518,7 @@ namespace very_tasty {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                loginDataSet1 ds = new loginDataSet1();
+                sistemaDataSet ds = new sistemaDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -522,7 +536,7 @@ namespace very_tasty {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "loginDataTable";
+                attribute2.FixedValue = "usuarioDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -566,82 +580,110 @@ namespace very_tasty {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class loginRow : global::System.Data.DataRow {
+        public partial class usuarioRow : global::System.Data.DataRow {
             
-            private loginDataTable tablelogin;
+            private usuarioDataTable tableusuario;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal loginRow(global::System.Data.DataRowBuilder rb) : 
+            internal usuarioRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablelogin = ((loginDataTable)(this.Table));
+                this.tableusuario = ((usuarioDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int Id {
                 get {
-                    return ((int)(this[this.tablelogin.IdColumn]));
+                    return ((int)(this[this.tableusuario.IdColumn]));
                 }
                 set {
-                    this[this.tablelogin.IdColumn] = value;
+                    this[this.tableusuario.IdColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string usuario {
+            public string nombre {
                 get {
                     try {
-                        return ((string)(this[this.tablelogin.usuarioColumn]));
+                        return ((string)(this[this.tableusuario.nombreColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'usuario\' de la tabla \'login\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre\' de la tabla \'usuario\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablelogin.usuarioColumn] = value;
+                    this[this.tableusuario.nombreColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string password {
+            public string clave {
                 get {
                     try {
-                        return ((string)(this[this.tablelogin.passwordColumn]));
+                        return ((string)(this[this.tableusuario.claveColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'password\' de la tabla \'login\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'clave\' de la tabla \'usuario\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablelogin.passwordColumn] = value;
+                    this[this.tableusuario.claveColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsusuarioNull() {
-                return this.IsNull(this.tablelogin.usuarioColumn);
+            public int nivel {
+                get {
+                    try {
+                        return ((int)(this[this.tableusuario.nivelColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nivel\' de la tabla \'usuario\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableusuario.nivelColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetusuarioNull() {
-                this[this.tablelogin.usuarioColumn] = global::System.Convert.DBNull;
+            public bool IsnombreNull() {
+                return this.IsNull(this.tableusuario.nombreColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IspasswordNull() {
-                return this.IsNull(this.tablelogin.passwordColumn);
+            public void SetnombreNull() {
+                this[this.tableusuario.nombreColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetpasswordNull() {
-                this[this.tablelogin.passwordColumn] = global::System.Convert.DBNull;
+            public bool IsclaveNull() {
+                return this.IsNull(this.tableusuario.claveColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetclaveNull() {
+                this[this.tableusuario.claveColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsnivelNull() {
+                return this.IsNull(this.tableusuario.nivelColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetnivelNull() {
+                this[this.tableusuario.nivelColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -649,22 +691,22 @@ namespace very_tasty {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class loginRowChangeEvent : global::System.EventArgs {
+        public class usuarioRowChangeEvent : global::System.EventArgs {
             
-            private loginRow eventRow;
+            private usuarioRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public loginRowChangeEvent(loginRow row, global::System.Data.DataRowAction action) {
+            public usuarioRowChangeEvent(usuarioRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public loginRow Row {
+            public usuarioRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -680,7 +722,7 @@ namespace very_tasty {
         }
     }
 }
-namespace very_tasty.loginDataSet1TableAdapters {
+namespace very_tasty.sistemaDataSetTableAdapters {
     
     
     /// <summary>
@@ -692,7 +734,7 @@ namespace very_tasty.loginDataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class loginTableAdapter : global::System.ComponentModel.Component {
+    public partial class usuarioTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.OleDb.OleDbDataAdapter _adapter;
         
@@ -706,7 +748,7 @@ namespace very_tasty.loginDataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public loginTableAdapter() {
+        public usuarioTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -803,47 +845,55 @@ namespace very_tasty.loginDataSet1TableAdapters {
             this._adapter = new global::System.Data.OleDb.OleDbDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "login";
+            tableMapping.DataSetTable = "usuario";
             tableMapping.ColumnMappings.Add("Id", "Id");
-            tableMapping.ColumnMappings.Add("usuario", "usuario");
-            tableMapping.ColumnMappings.Add("password", "password");
+            tableMapping.ColumnMappings.Add("nombre", "nombre");
+            tableMapping.ColumnMappings.Add("clave", "clave");
+            tableMapping.ColumnMappings.Add("nivel", "nivel");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM `login` WHERE ((`Id` = ?) AND ((? = 1 AND `usuario` IS NULL) OR (`usu" +
-                "ario` = ?)) AND ((? = 1 AND `password` IS NULL) OR (`password` = ?)))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM `usuario` WHERE ((`Id` = ?) AND ((? = 1 AND `nombre` IS NULL) OR (`no" +
+                "mbre` = ?)) AND ((? = 1 AND `clave` IS NULL) OR (`clave` = ?)) AND ((? = 1 AND `" +
+                "nivel` IS NULL) OR (`nivel` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Id", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Id", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_usuario", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "usuario", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_usuario", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "usuario", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_password", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "password", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_password", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "password", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_nombre", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nombre", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_nombre", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nombre", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_clave", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "clave", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_clave", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "clave", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_nivel", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nivel", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_nivel", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nivel", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `login` (`usuario`, `password`) VALUES (?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `usuario` (`nombre`, `clave`, `nivel`) VALUES (?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("usuario", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "usuario", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("password", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "password", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("nombre", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nombre", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("clave", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "clave", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("nivel", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nivel", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE `login` SET `usuario` = ?, `password` = ? WHERE ((`Id` = ?) AND ((? = 1 AN" +
-                "D `usuario` IS NULL) OR (`usuario` = ?)) AND ((? = 1 AND `password` IS NULL) OR " +
-                "(`password` = ?)))";
+            this._adapter.UpdateCommand.CommandText = "UPDATE `usuario` SET `nombre` = ?, `clave` = ?, `nivel` = ? WHERE ((`Id` = ?) AND" +
+                " ((? = 1 AND `nombre` IS NULL) OR (`nombre` = ?)) AND ((? = 1 AND `clave` IS NUL" +
+                "L) OR (`clave` = ?)) AND ((? = 1 AND `nivel` IS NULL) OR (`nivel` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("usuario", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "usuario", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("password", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "password", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("nombre", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nombre", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("clave", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "clave", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("nivel", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nivel", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Id", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Id", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_usuario", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "usuario", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_usuario", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "usuario", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_password", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "password", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_password", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "password", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_nombre", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nombre", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_nombre", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nombre", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_clave", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "clave", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_clave", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "clave", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_nivel", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nivel", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_nivel", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "nivel", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::very_tasty.Properties.Settings.Default.loginConnectionString;
+            this._connection.ConnectionString = global::very_tasty.Properties.Settings.Default.sistemaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -852,7 +902,7 @@ namespace very_tasty.loginDataSet1TableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id, usuario, [password] FROM login";
+            this._commandCollection[0].CommandText = "SELECT Id, nombre, clave, nivel FROM usuario";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -860,7 +910,7 @@ namespace very_tasty.loginDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(loginDataSet1.loginDataTable dataTable) {
+        public virtual int Fill(sistemaDataSet.usuarioDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -873,9 +923,9 @@ namespace very_tasty.loginDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual loginDataSet1.loginDataTable GetData() {
+        public virtual sistemaDataSet.usuarioDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            loginDataSet1.loginDataTable dataTable = new loginDataSet1.loginDataTable();
+            sistemaDataSet.usuarioDataTable dataTable = new sistemaDataSet.usuarioDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -883,15 +933,15 @@ namespace very_tasty.loginDataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(loginDataSet1.loginDataTable dataTable) {
+        public virtual int Update(sistemaDataSet.usuarioDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(loginDataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "login");
+        public virtual int Update(sistemaDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "usuario");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -913,23 +963,31 @@ namespace very_tasty.loginDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id, string Original_usuario, string Original_password) {
+        public virtual int Delete(int Original_Id, string Original_nombre, string Original_clave, global::System.Nullable<int> Original_nivel) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
-            if ((Original_usuario == null)) {
+            if ((Original_nombre == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_usuario));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_nombre));
             }
-            if ((Original_password == null)) {
+            if ((Original_clave == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_password));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_clave));
+            }
+            if ((Original_nivel.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((int)(Original_nivel.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -951,18 +1009,24 @@ namespace very_tasty.loginDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string usuario, string password) {
-            if ((usuario == null)) {
+        public virtual int Insert(string nombre, string clave, global::System.Nullable<int> nivel) {
+            if ((nombre == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(usuario));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(nombre));
             }
-            if ((password == null)) {
+            if ((clave == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(password));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(clave));
+            }
+            if ((nivel.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((int)(nivel.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -984,35 +1048,49 @@ namespace very_tasty.loginDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string usuario, string password, int Original_Id, string Original_usuario, string Original_password) {
-            if ((usuario == null)) {
+        public virtual int Update(string nombre, string clave, global::System.Nullable<int> nivel, int Original_Id, string Original_nombre, string Original_clave, global::System.Nullable<int> Original_nivel) {
+            if ((nombre == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(usuario));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(nombre));
             }
-            if ((password == null)) {
+            if ((clave == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(password));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(clave));
             }
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_Id));
-            if ((Original_usuario == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            if ((nivel.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(nivel.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_usuario));
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((Original_password == null)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_Id));
+            if ((Original_nombre == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_password));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_nombre));
+            }
+            if ((Original_clave == null)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_clave));
+            }
+            if ((Original_nivel.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_nivel.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1043,7 +1121,7 @@ namespace very_tasty.loginDataSet1TableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private loginTableAdapter _loginTableAdapter;
+        private usuarioTableAdapter _usuarioTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1065,12 +1143,12 @@ namespace very_tasty.loginDataSet1TableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public loginTableAdapter loginTableAdapter {
+        public usuarioTableAdapter usuarioTableAdapter {
             get {
-                return this._loginTableAdapter;
+                return this._usuarioTableAdapter;
             }
             set {
-                this._loginTableAdapter = value;
+                this._usuarioTableAdapter = value;
             }
         }
         
@@ -1093,9 +1171,9 @@ namespace very_tasty.loginDataSet1TableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._loginTableAdapter != null) 
-                            && (this._loginTableAdapter.Connection != null))) {
-                    return this._loginTableAdapter.Connection;
+                if (((this._usuarioTableAdapter != null) 
+                            && (this._usuarioTableAdapter.Connection != null))) {
+                    return this._usuarioTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1110,7 +1188,7 @@ namespace very_tasty.loginDataSet1TableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._loginTableAdapter != null)) {
+                if ((this._usuarioTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1122,14 +1200,14 @@ namespace very_tasty.loginDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(loginDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(sistemaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._loginTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.login.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._usuarioTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.usuario.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._loginTableAdapter.Update(updatedRows));
+                    result = (result + this._usuarioTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1141,13 +1219,13 @@ namespace very_tasty.loginDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(loginDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(sistemaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._loginTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.login.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._usuarioTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.usuario.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._loginTableAdapter.Update(addedRows));
+                    result = (result + this._usuarioTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1159,13 +1237,13 @@ namespace very_tasty.loginDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(loginDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(sistemaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._loginTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.login.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._usuarioTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.usuario.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._loginTableAdapter.Update(deletedRows));
+                    result = (result + this._usuarioTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1201,15 +1279,15 @@ namespace very_tasty.loginDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(loginDataSet1 dataSet) {
+        public virtual int UpdateAll(sistemaDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._loginTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._loginTableAdapter.Connection) == false))) {
+            if (((this._usuarioTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._usuarioTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi" +
                         "sma cadena de conexión.");
             }
@@ -1245,13 +1323,13 @@ namespace very_tasty.loginDataSet1TableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._loginTableAdapter != null)) {
-                    revertConnections.Add(this._loginTableAdapter, this._loginTableAdapter.Connection);
-                    this._loginTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(workConnection));
-                    this._loginTableAdapter.Transaction = ((global::System.Data.OleDb.OleDbTransaction)(workTransaction));
-                    if (this._loginTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._loginTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._loginTableAdapter.Adapter);
+                if ((this._usuarioTableAdapter != null)) {
+                    revertConnections.Add(this._usuarioTableAdapter, this._usuarioTableAdapter.Connection);
+                    this._usuarioTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(workConnection));
+                    this._usuarioTableAdapter.Transaction = ((global::System.Data.OleDb.OleDbTransaction)(workTransaction));
+                    if (this._usuarioTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._usuarioTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._usuarioTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1312,9 +1390,9 @@ namespace very_tasty.loginDataSet1TableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._loginTableAdapter != null)) {
-                    this._loginTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(revertConnections[this._loginTableAdapter]));
-                    this._loginTableAdapter.Transaction = null;
+                if ((this._usuarioTableAdapter != null)) {
+                    this._usuarioTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(revertConnections[this._usuarioTableAdapter]));
+                    this._usuarioTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

@@ -29,6 +29,7 @@ namespace very_tasty
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -42,13 +43,18 @@ namespace very_tasty
             this.button10 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sistemaDataSet = new very_tasty.sistemaDataSet();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.usuarioTableAdapter = new very_tasty.sistemaDataSetTableAdapters.usuarioTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -59,6 +65,7 @@ namespace very_tasty
             this.button1.TabIndex = 0;
             this.button1.Text = "Primero";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -68,6 +75,7 @@ namespace very_tasty
             this.button2.TabIndex = 1;
             this.button2.Text = "Nuevo";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -77,6 +85,7 @@ namespace very_tasty
             this.button3.TabIndex = 2;
             this.button3.Text = "Guardar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -86,6 +95,7 @@ namespace very_tasty
             this.button4.TabIndex = 3;
             this.button4.Text = "Anterior";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -95,6 +105,7 @@ namespace very_tasty
             this.button5.TabIndex = 4;
             this.button5.Text = "Eliminar";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -104,6 +115,7 @@ namespace very_tasty
             this.button6.TabIndex = 5;
             this.button6.Text = "Siguiente";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -113,6 +125,7 @@ namespace very_tasty
             this.button7.TabIndex = 6;
             this.button7.Text = "Modificar";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -122,6 +135,7 @@ namespace very_tasty
             this.button8.TabIndex = 7;
             this.button8.Text = "Actualizar";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -131,6 +145,7 @@ namespace very_tasty
             this.button9.TabIndex = 8;
             this.button9.Text = "Ultimo ";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -140,6 +155,7 @@ namespace very_tasty
             this.button10.TabIndex = 9;
             this.button10.Text = "Salir";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // pictureBox1
             // 
@@ -153,13 +169,25 @@ namespace very_tasty
             // 
             // textBox1
             // 
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "nombre", true));
             this.textBox1.Location = new System.Drawing.Point(253, 76);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(115, 20);
             this.textBox1.TabIndex = 11;
             // 
+            // usuarioBindingSource
+            // 
+            this.usuarioBindingSource.DataMember = "usuario";
+            this.usuarioBindingSource.DataSource = this.sistemaDataSet;
+            // 
+            // sistemaDataSet
+            // 
+            this.sistemaDataSet.DataSetName = "sistemaDataSet";
+            this.sistemaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // textBox2
             // 
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "clave", true));
             this.textBox2.Location = new System.Drawing.Point(253, 115);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(115, 20);
@@ -201,13 +229,22 @@ namespace very_tasty
             this.label4.TabIndex = 16;
             this.label4.Text = "Nivel";
             // 
-            // textBox3
+            // comboBox1
             // 
-            this.textBox3.Location = new System.Drawing.Point(253, 154);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(115, 20);
-            this.textBox3.TabIndex = 17;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "nivel", true));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.comboBox1.Location = new System.Drawing.Point(253, 157);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 17;
+            // 
+            // usuarioTableAdapter
+            // 
+            this.usuarioTableAdapter.ClearBeforeFill = true;
             // 
             // Form3
             // 
@@ -215,7 +252,7 @@ namespace very_tasty
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(445, 388);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -238,6 +275,8 @@ namespace very_tasty
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,6 +301,9 @@ namespace very_tasty
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private sistemaDataSet sistemaDataSet;
+        private System.Windows.Forms.BindingSource usuarioBindingSource;
+        private sistemaDataSetTableAdapters.usuarioTableAdapter usuarioTableAdapter;
     }
 }
