@@ -23,7 +23,7 @@ namespace very_tasty
         {
             InitializeComponent();
         }
-        SqlConnection conex = new SqlConnection("server = LAPTOP-SCCOV70O; database = codigos+ ; integrated security=true");
+        SqlConnection conex = new SqlConnection("server = DESKTOP-MUUUREL; database = codigos+ ; integrated security=true");
        
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -80,12 +80,12 @@ namespace very_tasty
         private void button2_Click(object sender, EventArgs e)
         {
             conex.Open();
-            string consul = "select * from usuarios where usuario='"+ textBox1.Text + "' and pass='"+ textBox2.Text +" ' ";
-            SqlCommand coman = new SqlCommand(consul,conex);
+            string consul = "select * from usuarios where usuario='" + textBox1.Text + "' and pass='" + textBox2.Text + " ' ";
+            SqlCommand coman = new SqlCommand(consul, conex);
             SqlDataReader lector;
             lector = coman.ExecuteReader();
 
-            if (lector.HasRows == true) 
+            if (lector.HasRows == true)
             {
                 MessageBox.Show("bienvenido al sistema" + textBox1.Text);
                 Form2 f2 = new Form2();
@@ -93,11 +93,11 @@ namespace very_tasty
                 this.Hide();
 
             }
-            else 
+            else
             {
 
                 MessageBox.Show(" Usuario o Contraseña invalido");
-            
+
             }
             conex.Close();
         }    
