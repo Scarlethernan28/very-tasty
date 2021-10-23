@@ -65,18 +65,21 @@ namespace very_tasty
             this.combosToolStripMenuItem.Name = "combosToolStripMenuItem";
             this.combosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.combosToolStripMenuItem.Text = "Combos";
+            this.combosToolStripMenuItem.Click += new System.EventHandler(this.combosToolStripMenuItem_Click);
             // 
             // postresToolStripMenuItem
             // 
             this.postresToolStripMenuItem.Name = "postresToolStripMenuItem";
             this.postresToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.postresToolStripMenuItem.Text = "Postres";
+            this.postresToolStripMenuItem.Click += new System.EventHandler(this.postresToolStripMenuItem_Click);
             // 
             // descuentosToolStripMenuItem
             // 
             this.descuentosToolStripMenuItem.Name = "descuentosToolStripMenuItem";
-            this.descuentosToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
-            this.descuentosToolStripMenuItem.Text = "descuentos";
+            this.descuentosToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.descuentosToolStripMenuItem.Text = "Ensaladas";
+            this.descuentosToolStripMenuItem.Click += new System.EventHandler(this.descuentosToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem
             // 
@@ -101,6 +104,7 @@ namespace very_tasty
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
             this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.inventarioToolStripMenuItem.Text = "Inventario";
+            this.inventarioToolStripMenuItem.Click += new System.EventHandler(this.inventarioToolStripMenuItem_Click);
             // 
             // descuentosToolStripMenuItem1
             // 
