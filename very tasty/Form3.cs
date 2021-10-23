@@ -25,7 +25,7 @@ namespace very_tasty
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'sistemaDataSet.usuario' Puede moverla o quitarla según sea necesario.
+            
             this.usuarioTableAdapter.Fill(this.sistemaDataSet.usuario);
 
             textBox1.Enabled = false;

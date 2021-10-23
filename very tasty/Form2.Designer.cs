@@ -37,6 +37,8 @@ namespace very_tasty
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuadroDeDialogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.descuentosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +51,9 @@ namespace very_tasty
             this.descuentosToolStripMenuItem,
             this.ayudaToolStripMenuItem,
             this.cuadroDeDialogosToolStripMenuItem,
-            this.acercaDeToolStripMenuItem});
+            this.acercaDeToolStripMenuItem,
+            this.inventarioToolStripMenuItem,
+            this.descuentosToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(697, 24);
@@ -92,6 +96,18 @@ namespace very_tasty
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca de ";
             // 
+            // inventarioToolStripMenuItem
+            // 
+            this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
+            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.inventarioToolStripMenuItem.Text = "Inventario";
+            // 
+            // descuentosToolStripMenuItem1
+            // 
+            this.descuentosToolStripMenuItem1.Name = "descuentosToolStripMenuItem1";
+            this.descuentosToolStripMenuItem1.Size = new System.Drawing.Size(80, 20);
+            this.descuentosToolStripMenuItem1.Text = "Descuentos";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,5 +138,7 @@ namespace very_tasty
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cuadroDeDialogosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inventarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem descuentosToolStripMenuItem1;
     }
 }

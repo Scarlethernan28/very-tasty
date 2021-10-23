@@ -23,7 +23,8 @@ namespace very_tasty
         {
             InitializeComponent();
         }
-        SqlConnection conex = new SqlConnection("server = DESKTOP-MUUUREL; database = codigos+ ; integrated security=true");
+
+        SqlConnection conex = new SqlConnection("server=DESKTOP-MUUUREL; database=codigos+ ; integrated security=true");
        
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -37,7 +38,7 @@ namespace very_tasty
             {
 
                 MessageBox.Show("Error por; " + a.ToString());
-            }
+            } conex.Close();
         }
                
 
@@ -50,10 +51,11 @@ namespace very_tasty
                 conexion_access.ConnectionString = "Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\\SISTEMA\\sistema.accdb ";
                 conexion_access.Open();
                 OleDbDataAdapter consulta = new OleDbDataAdapter("SELECT * FROM usuario", conexion_access);
-                DataSet resultado = new DataSet(); consulta.Fill(resultado);
+                DataSet resultado = new DataSet();
+                consulta.Fill(resultado);
                 foreach (DataRow registro in resultado.Tables[0].Rows)
                 {
-                    if ((textBox1.Text == registro["nombre"].ToString()) && (textBox2.Text == registro["clave"].ToString()))
+                    if ((textBox1.Text == registro["nombre"].ToString()) & (textBox2.Text == registro["clave"].ToString()))
                     {
 
                         Form3 f3 = new Form3();
